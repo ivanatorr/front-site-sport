@@ -13,7 +13,7 @@ export default class ApiGet extends Component {
         };
     }
     componentDidMount(){
-        fetch()
+        fetch("www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
         .then(res => res.json()
         .then(
             (result) => {
